@@ -1,0 +1,90 @@
+.Root {
+  width: 260px;
+}
+
+.Field {
+  display: grid;
+  margin-bottom: 10px;
+}
+
+.Label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--foreground);
+}
+
+.Message {
+  font-size: 13px;
+  color: var(--foreground);
+  opacity: 0.8;
+}
+
+.Input,
+.Textarea {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 15px;
+  color: var(--foreground);
+  background-color: var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+  &:hover {
+    box-shadow: 0 0 0 1px var(--primary);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px var(--primary);
+  }
+  &::selection {
+    background-color: var(--primary);
+    color: white;
+  }
+}
+
+.Input {
+  padding: 0 10px;
+  height: 35px;
+  line-height: 1;
+}
+
+.Textarea {
+  resize: none;
+  padding: 10px;
+}
+
+.AuthError {
+  background: rgba(var(--destructive), 0.2);
+  color: rgb(var(--destructive));
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.Error {
+  color: red;
+  padding-block: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.Spinner {
+  color: var(--background);
+}
+
+.Button {
+  width: 100%;
+}
+
+.Wrapper {
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+}
