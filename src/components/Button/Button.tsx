@@ -4,7 +4,8 @@ type ButtonProps = {
   className?: string
   href?: string
   children: React.ReactNode
-}
+} & React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
 
 export default function Button({ children, className, href, ...rest }: ButtonProps) {
   if (href) {
