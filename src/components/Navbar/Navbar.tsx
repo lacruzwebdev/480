@@ -1,6 +1,7 @@
 import useAuth from "../../hooks/useAuth"
 import Button from "../Button"
 import Container from "../Container"
+import LanguageSelector from "../LanguageSelector"
 import styles from "./Navbar.module.css"
 
 export default function Navbar() {
@@ -9,6 +10,7 @@ export default function Navbar() {
     <Container as="header" className={styles.Wrapper}>
       <h2>Weather</h2>
       <nav className={styles.Navbar}>
+        <LanguageSelector />
         {user && (
           <div className={styles.UserSection}>
             <p>{user.name}</p>
