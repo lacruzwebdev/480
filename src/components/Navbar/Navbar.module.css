@@ -9,6 +9,7 @@
   display: flex;
   justify-content: end;
   gap: 2rem;
+  align-items: center;
 }
 
 .UserSection {
@@ -17,6 +18,14 @@
   gap: 2rem;
   p {
     font-size: 0.8rem;
+  }
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+  &:hover {
+    color: var(--primary);
   }
 }
 

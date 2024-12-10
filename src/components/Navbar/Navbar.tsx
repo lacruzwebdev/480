@@ -10,6 +10,12 @@ export default function Navbar() {
     <Container as="header" className={styles.Wrapper}>
       <h2>Weather</h2>
       <nav className={styles.Navbar}>
+        {user && (
+          <>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/contact">Contact</a>
+          </>
+        )}
         <LanguageSelector />
         {user && (
           <div className={styles.UserSection}>
