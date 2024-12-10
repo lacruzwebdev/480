@@ -34,4 +34,7 @@ a {
     flex-direction: column;
     padding-top: 1rem;
   }
+  .Navbar {
+    flex-direction: column;
+  }
 }
