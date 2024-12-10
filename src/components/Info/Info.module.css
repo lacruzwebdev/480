@@ -1,0 +1,21 @@
+.Info {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.success {
+  background-color: rgba(var(--info), 0.2);
+  color: rgba(var(--info), 1);
+}
+
+.error {
+  background-color: rgba(var(--destructive), 0.2);
+  color: rgba(var(--destructive), 1);
+}

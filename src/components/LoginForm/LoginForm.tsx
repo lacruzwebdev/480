@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import FormInput from "../FormInput"
+import Info from "../Info"
 
 const formSchema = z.object({
   email: z.string().email("Email no válido"),
@@ -47,7 +48,7 @@ export default function LoginForm() {
 
   return (
     <div className={styles.Wrapper}>
-      {authError && <p className={styles.AuthError}>{t("authError")}</p>}
+      {authError && <Info type="error">{t("authError")}</Info>}
       <form onSubmit={handleSubmit(handleLogin)}>
         <FormInput label={t("email")} name="email" register={register} errors={errors} />
         <FormInput label={t("password")} name="password" register={register} errors={errors} />

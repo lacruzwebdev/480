@@ -56,18 +56,6 @@
   padding: 10px;
 }
 
-.AuthError {
-  background: rgba(var(--destructive), 0.2);
-  color: rgb(var(--destructive));
-  padding-block: 0.5rem;
-  padding-inline: 1.5rem;
-  border-radius: 5px;
-  width: 100%;
-  text-align: center;
-  font-size: 0.8rem;
-  margin-top: 1rem;
-}
-
 .Error {
   color: red;
   padding-block: 0.5rem;

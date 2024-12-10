@@ -9,7 +9,8 @@
   --primary: #0084ff;
   --border: #aaa;
   --destructive: 255, 0, 0;
-  --info: 50, 200, 255;
+  --info: 50, 100, 255;
+  --success: 0, 100, 0;
   --primary-rgb: 0, 132, 255;
 }
 
