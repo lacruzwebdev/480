@@ -2,7 +2,7 @@ import { Navigate } from "react-router-dom"
 import Container from "../components/Container/Container"
 import LoginForm from "../components/LoginForm"
 import useAuth from "../hooks/useAuth"
-import styles from "./Loginpage.module.css"
+import styles from "./LoginPage.module.css"
 import { useTranslation } from "react-i18next"
 
 export default function LoginPage() {
