@@ -1,0 +1,23 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 4rem;
+  min-height: calc(100vh - 67px);
+  place-items: center;
+}
+
+.Main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.Sidebar {
+  width: 100%;
+}
+
+@media (width < 768px) {
+  .Wrapper {
+    grid-template-columns: 1fr;
+  }
+}
