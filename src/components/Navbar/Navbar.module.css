@@ -1,0 +1,28 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navbar {
+  padding-block: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.UserSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (width < 768px) {
+  .Wrapper {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+}
