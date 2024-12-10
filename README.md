@@ -40,7 +40,7 @@ This application includes a **mock authentication system** for demonstration pur
 
 Ensure you have the following installed:
 
-- **Node.js** (version 16 or higher recommended)
+- **Node.js** (version 18 or higher recommended)
 - **pnpm**
 
 ### Installation
