@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Geist";
+  src: local("Geist-Regular"), url("./assets/fonts/Geist-Regular.woff") format("woff");
+}
 
 :root {
   --background: #fff;
