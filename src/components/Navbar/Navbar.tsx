@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import useAuth from "../../hooks/useAuth"
 import Button from "../Button"
 import Container from "../Container"
@@ -12,8 +13,8 @@ export default function Navbar() {
       <nav className={styles.Navbar}>
         {user && (
           <>
-            <a href="/dashboard">Dashboard</a>
-            <a href="/contact">Contact</a>
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/contact">Contact</Link>
           </>
         )}
         <LanguageSelector />
