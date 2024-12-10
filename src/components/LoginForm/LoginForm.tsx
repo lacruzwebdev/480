@@ -51,7 +51,7 @@ export default function LoginForm() {
       {authError && <Info type="error">{t("authError")}</Info>}
       <form onSubmit={handleSubmit(handleLogin)}>
         <FormInput label={t("email")} name="email" register={register} errors={errors} />
-        <FormInput label={t("password")} name="password" register={register} errors={errors} />
+        <FormInput label={t("password")} type="password" name="password" register={register} errors={errors} />
         <Button className={styles.Button}>
           {isLoading ? <Spinner color="#FFFFFF" /> : "Login"}
         </Button>
