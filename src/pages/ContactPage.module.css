@@ -1,0 +1,8 @@
+.Wrapper {
+  padding-block: 2rem;
+  min-height: calc(100vh - 67px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
