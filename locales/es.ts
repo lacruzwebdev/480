@@ -12,4 +12,5 @@ export default {
   submit: "Enviar",
   contact: "Contacto",
   authError: "Credenciales inválidas",
+  submitted: "Datos enviados",
 }
