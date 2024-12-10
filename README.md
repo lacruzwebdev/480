@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# 480 Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Check out the [deployed version](https://480-kjnhdzdit-lacruzwebdevs-projects.vercel.app/)!
 
-Currently, two official plugins are available:
+A simple weather application built using **React** and **TypeScript**, developed as a technical test for **[480](https://cuatroochenta.com/)**. The app provides weather information with smooth animations and efficient data handling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+- **Weather Information:** Get real-time weather details from OpenWeatherMap API.
+- **Caching:** API calls are cached!
+- **Animations:** Subtle and engaging animations using Framer Motion.
+- **Internationalization:** Multilingual support powered by i18Next.
+- **Form Handling:** Robust form validation with React Hook Form and Zod.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Authentication 🔒
 
-- Configure the top-level `parserOptions` property like this:
+This application includes a **mock authentication system** for demonstration purposes. The authentication flow mimics a real-world login system with the following features:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Mock Login:** Accepts the email `480@example.com` and password `480` as valid credentials.
+- **Simulated Delay:** Introduces a 1-second delay to emulate an API call.
+- **Session Management:** Uses cookies to store and retrieve user session data.
+- **Login & Logout:** Provides login and logout functionality via a context provider.
+- **User Settings:** English is the default language, but after that, the user's selected language is stored in local storage.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies & Dependencies 🚀
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [**React**](https://reactjs.org/) + [**TypeScript**](https://www.typescriptlang.org/): For building a scalable and maintainable user interface.
+- **CSS Modules**: For styling components with ease using the latest CSS syntax, like nesting!
+- [**TanStack Query**](https://tanstack.com/query/latest): Efficient querying and caching of weather data.
+- [**React Hook Form**](https://react-hook-form.com/): For handling and validating forms effortlessly.
+- [**DayJS**](https://day.js.org/): Lightweight and fast date manipulation.
+- [**Zod**](https://zod.dev/): Type-safe schema validation.
+- [**i18Next**](https://www.i18next.com/): Localization and translation support.
+- [**lucide-react**](https://lucide.dev/): Sleek and modern icons.
+- [**Framer Motion**](https://www.framer.com/motion/): For smooth and elegant animations.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Getting Started 🛠️
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js** (version 16 or higher recommended)
+- **pnpm**
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/lacruzwebdev/480.git
+   cd 480
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Run the project:
+   ```bash
+   pnpm dev
+   ```
+
+Make sure to include your own OpenWeatherMap API key in the `.env` file!
