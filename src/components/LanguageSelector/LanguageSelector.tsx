@@ -11,7 +11,7 @@ export default function LanguageSelector() {
   }
   return (
     <div className={styles.LanguageSelector}>
-      <Languages />
+      <Languages size={18} />
       <select value={i18n.language} onChange={handleChange}>
         {LANGUAGES.map((lang) => (
           <option key={lang.id} value={lang.id}>
