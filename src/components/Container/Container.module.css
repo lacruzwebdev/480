@@ -1,0 +1,4 @@
+.Container {
+  width: min(100% - 3rem, 68.65rem);
+  margin-inline: auto;
+}
